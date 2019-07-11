@@ -1,6 +1,7 @@
 from stack import Stack
 
 print("\nLet's play Towers of Hanoi!!")
+print("\nThe rules are pretty simple.\nGet all of the disks from the left stack to the right stack.\nOnly the top disk of each stack can be moved.\nOnly one disk can be moved at a time.\nYou can not move a larger stack on top of a smaller stack\n")
 
 #Create the Stacks
 stacks = []
@@ -13,7 +14,7 @@ stacks.append(middle_stack)
 stacks.append(right_stack)
 
 #Set up the Game
-num_disks = int(input("\nHow many disks do you want to play with? : "))
+num_disks = int(input("\nHow many disks do you want to play with? (minimum of 3) : "))
 while num_disks < 3:
   num_disks = int(input("\nEnter a number greater than or equal to 3\n"))
 #ADD DISCS
